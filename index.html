@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
 	<title>Our Love Story</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -12,24 +13,46 @@
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
 </head>
 
 <body>
-	<audio src="music/loveyou.mp3" 
-	autoplay="autoplay" loop="loop">
+	<audio src="music/loveyou.mp3" autoplay="autoplay" loop="loop">
 		cant play the BGM!
 	</audio>
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
-				2020年10月25日,我鼓起勇气跟你告白.<br/>
-				磕磕巴巴地对你说我喜欢你，希望你能够做我的女朋友.<br/>
-				非常幸运，你同意了，当时使我感觉拥有了整个世界.<br/>
-				Since then, I miss u every day.<br/>
+				2020年10月25日,我鼓起勇气跟你告白.<br />
+				磕磕巴巴地对你说我喜欢你，希望你能够做我的女朋友.<br />
+				后面11月15日,你同意了，当时使我感觉拥有了整个世界.<br />
+				Since then, I miss u every day.<br />
 				And take care of u and our love.<br />
-				希望能和你一起携手走过每一个春夏秋冬，体会生活的酸甜苦辣，走你自己不敢走的夜路。<br>
-				做宝文一个人专属的工具人、摄影师、下属、做家务的男人，而你便是我这一生最重要的人。
+				希望能和你一起携手走过每一个春夏秋冬，体会生活的酸甜苦辣，走你自己不敢走的夜路.<br>
+				做宝文一个人专属的工具人、摄影师、下属、做家务的男人，而你便是我这一生最重要的人.
+
+				10.11 你我相识
+				10.17 一起逛798艺术区
+				10.18 担心你做实验挨饿，第一次给你送零食
+				10.24 第一次牵手　拥抱 看电影
+				10.25　给你表白 第一次进了你们学校，从此便成了我日夜挂念的地方
+				10.26 第一次一起逛了紫竹院公园
+				10.27 跟你吹嘘2.14日前练出腹肌
+				10.31 第一次给你带了爱吃的糯米糖葫芦,看电影数码宝贝
+				11.06 第一次对我宝贝说了脏话，心里很内疚
+				11.08 第一次一起上自习，吃食堂里小面　漫咖啡看电影 ,中午一起开箱粉底液
+				11.11 你我认识一个月，一起逛食宝街,冬天里的第一杯奶茶，南京大排档，第一次公主抱，第一次亲了你的额头和脸颊
+				11.12 你主动夸我好，脾气好、怕你、细心
+				11.13 你过来找我看电影，在公交站牌我故意躲起来骗你说没到，从后面抱住你下了你一跳；你第一次真的生了我的气，不和我说话，我手足无措
+				11.15 一起逛故宫;第一次吃同一个饭团；喝同一个北京老酸奶；在午门城楼上拍了第一张合影；一起去larks，你对我说生日快乐，同意了我的转正，我有女朋友了；第一次接吻，彼此的初吻。
+				11.16 第一次摸了你的胸；你第一次发现了我有生理反应。。
+				11.19 宝贝第一次请我吃饭；为我买生日蛋糕；给我唱生日快乐歌，我听了一遍又一遍；你第一次坐在我的腿上；我第一次摸到你的屁股。
+				...
+				...
+				后面的时间线我这里都有记录
+				一直记录一辈子
+				我爱你，宝贝
+				❤
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
@@ -39,7 +62,7 @@
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Love u forever and ever.<br/>
+						Love u forever and ever.<br />
 						<div class="signature">- 刘云尚</div>
 					</div>
 				</div>
@@ -47,7 +70,7 @@
 		</div>
 		<div id="copyright">
 			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2020 <a href='https://csxiaoshang.github.io/'>csxiaoshang.github.io</a> 
+			Copyright © 2020 <a href='https://csxiaoshang.github.io/'>csxiaoshang.github.io</a>
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -59,16 +82,16 @@
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
-		
+
 		if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
 			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
 			document.body.appendChild(msg);
 			$("#code").css("display", "none")
 			$("#copyright").css("position", "absolute");
 			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
+			document.execCommand("stop");
 		} else {
 			setTimeout(function () {
 				startHeartAnimation();
@@ -84,4 +107,5 @@
 		}
 	</script>
 </body>
+
 </html>
